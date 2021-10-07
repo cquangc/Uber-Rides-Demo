@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pydeck as pdk
-from scipy.stats import norm
+import scipy.stats
 
 # Acknowledgements
 # This is adapted from 
