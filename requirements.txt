@@ -1,0 +1,4 @@
+py -m pip install streamlit
+py -m pip install pydeck
+
+
