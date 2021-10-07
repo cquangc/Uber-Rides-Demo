@@ -10,6 +10,12 @@ import pydeck as pdk
 
 # Create app title for browser
 st.title('Cuongs Uber pickups in NYC Streamlit demo')
+st.subheader('About this app')
+st.write('This is a simple demo to demonstrate how easy it is to produce a webapp entirely in Python \n')
+st.write('We will access raw data stored in an AWS S3 repository on Uber rides in New York \n')
+st.write('We will then visualise these data in various static and dynamic charts \n')
+st.write('The webapp also incorporates several widgets to demonstrate the potential for interactivity \n')
+st.write('such as radio buttons and slider bars. \n')
 
 # Fetch Uber data
 
@@ -102,8 +108,7 @@ initial_view_state=pdk.ViewState(
 	],
 ))
 
-st.subheader('About this app')
-st.write('This is a simple demo to demonstrate how easy it is to produce a WebApp entirely in Python \n')
+
 
 
 
