@@ -46,18 +46,22 @@ hist_values = np.histogram(
     data[DATE_COLUMN].dt.hour, bins=24, range=(0,24))[0]
 
 # Try different plotting methods
+st.subheader('Histogram')
 st.bar_chart(hist_values)
+st.subheader('Area Chart')
 st.area_chart(hist_values)
 
 # Plot ALL the Uber pickup data on a map of New York
 
 st.subheader('Map of all pickups')
+st.subheader('Hold Shift to rotate')
 st.map(data)
 
 # Plot only the data at 17:00 on a map of New York
 hour_to_filter = 17
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader(f'Map of all pickups at {hour_to_filter}:00')
+st.subheader('Hold Shift to rotate')
 st.map(filtered_data)
 
 # Use a slider to adjust time window then 
@@ -65,6 +69,7 @@ st.map(filtered_data)
 hour_to_filter = st.slider('hour', 0, 23, 17) # minimum = 0, max = 23:00, default = 17:00
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader(f'Map of all pickups at {hour_to_filter}:00')
+st.subheader('Hold Shift to rotate')
 st.map(filtered_data)
 
 
