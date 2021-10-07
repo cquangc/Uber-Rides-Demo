@@ -107,6 +107,14 @@ initial_view_state=pdk.ViewState(
 	],
 ))
 
+# A plot with integrated sliders
+
+x = np.arange(-3, 3, 0.001)
+mu = st.slider('mu', 0, 1, 0.5) # minimum = 0, max = 1, default = 0.5
+sd = st.slider('sd', 0, 1, 0.5) # minimum = 0, max = 1, default = 0.5
+y = norm.pdf(x, mu, sd)
+st.bar_chart(x, y)
+
 st.subheader('About this app')
 st.write('This is a simple demo to demonstrate how easy it is to produce a webapp entirely in Python \n')
 st.write('We will access raw data stored in an AWS S3 repository on Uber rides in New York \n')
