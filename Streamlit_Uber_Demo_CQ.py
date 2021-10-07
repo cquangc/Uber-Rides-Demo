@@ -10,12 +10,6 @@ import pydeck as pdk
 
 # Create app title for browser
 st.title('Cuongs Uber pickups in NYC Streamlit demo')
-st.subheader('About this app')
-st.write('This is a simple demo to demonstrate how easy it is to produce a webapp entirely in Python \n')
-st.write('We will access raw data stored in an AWS S3 repository on Uber rides in New York \n')
-st.write('We will then visualise these data in various static and dynamic charts \n')
-st.write('The webapp also incorporates several widgets to demonstrate the potential for interactivity \n')
-st.write('such as radio buttons and slider bars. \n')
 
 # Fetch Uber data
 
@@ -108,7 +102,18 @@ initial_view_state=pdk.ViewState(
 	],
 ))
 
-
+st.subheader('About this app')
+st.write('This is a simple demo to demonstrate how easy it is to produce a webapp entirely in Python \n')
+st.write('We will access raw data stored in an AWS S3 repository on Uber rides in New York \n')
+st.write('We will then visualise these data in various static and dynamic charts \n')
+st.write('The webapp also incorporates several widgets to demonstrate the potential for interactivity \n')
+st.write('such as radio buttons and slider bars. \n')
+st.write('The webapp employs the use of data caching with state awareness to mitigate the need to constantly refresh data pulls from S3 \n')
+st.write('each time it is invoked. This saves time for the user as well as reducing the load on S3. \n')
+st.write('The code resides in GitHub as a public .py script \n')
+st.write('A requirements.txt file in the repo contains the additional requirements that are outside the usual python libraries \n')
+st.write('In this case these are streamlit and pydeck \n')
+st.write('The code is accessible by clicking on the 3 horizontal bars in the top right corner of the window \n')
 
 
 
