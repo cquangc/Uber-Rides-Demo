@@ -102,5 +102,10 @@ initial_view_state=pdk.ViewState(
 	],
 ))
 
+st.subheader('About this app')
+st.write('This is a simple demo to demonstrate how easy it is to produce a WebApp entirely in Python \n')
+
+
+
 
 
