@@ -110,8 +110,8 @@ initial_view_state=pdk.ViewState(
 # A plot with integrated sliders
 st.subheader('A plot with integrated sliders')
 x = np.arange(-3, 3, 0.001)
-mu = st.slider('mu', 0.0, 1.0, 0.5) # minimum = 0, max = 1, default = 0.5
-sd = st.slider('sd', 0.0, 1.0, 0.5) # minimum = 0, max = 1, default = 0.5
+mu = st.slider('mu', min_value = 0.0, max_value = 1.0, value = 0.5) # minimum = 0, max = 1, default = 0.5
+sd = st.slider('sd', min_value = 0.0, max_value = 1.0, value = 0.5) # minimum = 0, max = 1, default = 0.5
 y = norm.pdf(x, mu, sd)
 st.area_chart(x, y)
 
