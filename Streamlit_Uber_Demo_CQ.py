@@ -76,7 +76,7 @@ st.map(filtered_data)
 # Trying a random 3D hexagon histogram on dynamic map
 # Reference:
 # https://docs.streamlit.io/en/stable/api.html#streamlit.pydeck_chart
-st.subheader('A random dynamic 3D map with hexagon histogram ')
+st.subheader('A random 3D map with hexagon histogram ')
 df = pd.DataFrame(np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4], columns=['lat', 'lon'])
 st.pydeck_chart(pdk.Deck(
 map_style='mapbox://styles/mapbox/light-v9',
