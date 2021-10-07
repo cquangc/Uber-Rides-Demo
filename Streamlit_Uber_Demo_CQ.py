@@ -111,9 +111,10 @@ st.write('such as radio buttons and slider bars. \n')
 st.write('The webapp employs the use of data caching with state awareness to mitigate the need to constantly refresh data pulls from S3 \n')
 st.write('each time it is invoked. This saves time for the user as well as reducing the load on S3. \n')
 st.write('The code resides in GitHub as a public .py script \n')
-st.write('A requirements.txt file in the repo contains the additional requirements that are outside the usual python libraries \n')
+st.write('A requirements.txt file in the repo contains the additional requirements that are outside the usual python libraries. \n')
 st.write('In this case these are streamlit and pydeck \n')
-st.write('The code is accessible by clicking on the 3 horizontal bars in the top right corner of the window \n')
+st.write('The code is accessible by clicking on the 3 horizontal bars in the top right corner of the window. \n')
+st.write('Thanks for viewing this demo! \n')
 
 
 
