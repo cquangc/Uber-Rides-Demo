@@ -11,6 +11,7 @@ from scipy.stats import norm
 
 # Create app title for browser
 st.title('Cuongs Uber pickups in NYC Streamlit demo')
+st.title('HELLO WORLD')
 
 # Fetch Uber data
 
