@@ -1,6 +1,6 @@
 streamlit==0.75.0
 pydeck==0.7.0
-scipy
+scipy.stats
 
 
 
