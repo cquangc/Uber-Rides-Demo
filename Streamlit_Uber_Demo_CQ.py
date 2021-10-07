@@ -73,7 +73,7 @@ st.subheader('Hold shift to orbit, scroll to zoom')
 st.map(filtered_data)
 
 
-# Trying a random 3D hexagon histogram on dynamic map
+# Trying a random 3D hexagon histogram on static map
 # Reference:
 # https://docs.streamlit.io/en/stable/api.html#streamlit.pydeck_chart
 st.subheader('A random 3D map with hexagon histogram ')
