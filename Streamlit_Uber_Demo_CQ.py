@@ -108,7 +108,7 @@ initial_view_state=pdk.ViewState(
 ))
 
 # A plot with integrated sliders
-
+st.subheader('A plot with integrated sliders')
 x = np.arange(-3, 3, 0.001)
 mu = st.slider('mu', 0, 1, 0.5) # minimum = 0, max = 1, default = 0.5
 sd = st.slider('sd', 0, 1, 0.5) # minimum = 0, max = 1, default = 0.5
