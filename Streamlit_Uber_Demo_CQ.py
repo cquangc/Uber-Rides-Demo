@@ -114,7 +114,7 @@ x = np.arange(-3, 3, 0.001)
 mu = st.slider('mu', min_value = 0.0, max_value = 1.0, value = 0.5) # minimum = 0, max = 1, default = 0.5
 sd = st.slider('sd', min_value = 0.0, max_value = 1.0, value = 0.5) # minimum = 0, max = 1, default = 0.5
 y = norm.pdf(x, mu, sd)
-st.area_chart(x, y)
+st.area_chart(y)
 
 st.subheader('About this app')
 st.write('This is a simple demo to demonstrate how easy it is to produce a webapp entirely in Python \n')
